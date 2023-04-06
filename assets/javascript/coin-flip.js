@@ -2,7 +2,7 @@
 
     let button = document.getElementById("flip");
     let result = document.getElementById("result");
-    let   = document.querySelector("tosses");
+    let tosses = document.getElementById("tosses");
 
    
     button.addEventListener("click", onClick);
