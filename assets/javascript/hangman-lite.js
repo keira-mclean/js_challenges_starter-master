@@ -1,6 +1,6 @@
 (function(){
 
-    let word = [];
+    let word = ["Superfantastical"];
 
     let letter = [];
 
