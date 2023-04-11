@@ -1,3 +1,5 @@
+"use strict";
+
 (function(){
 
     let button = document.getElementById("flip");
@@ -9,7 +11,7 @@
 
     let countOfTosses = tosses.innerHTML;
     let addToss = parseInt(countOfTosses) +1;
-    tosses.innerHTML = addToss;
+    countOfTosses = addToss;
 
     function onClick(event) {
       let coin = Math.random();
@@ -20,5 +22,5 @@
         result.innerHTML = "Tails";
       }
     }
-
+    document.write(tosses);
 })();

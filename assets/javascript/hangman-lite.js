@@ -1,9 +1,20 @@
 (function(){
 
-    let word = ["Superfantastical"];
+    const word = "monday";
 
-    let letter = [];
+    let letter = "b";
 
-    document.write("hello from hangman-lite.js");
+    if(word.includes(letter)) {
+        let count = word.split("").filter(wordLetter => wordLetter === letter).length
+        document.write("Yeah, the letter "+letter+" exists "+count+" times");
+    } else {
+        document.write("Nope, that leter does not exist");
+    }
+
+
+    
+
+    //document.write("Yeah, the letter "+letter+" exists "+count+" times");
+    //document.write("Nope, that leter does not exist");
 
 })();
