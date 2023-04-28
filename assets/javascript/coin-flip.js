@@ -4,8 +4,12 @@
 
     let button = document.getElementById("flip");
     let result = document.getElementById("result");
+    let tosses = document.getElementById("tosses");
 
-   
+    let countOfTosses = tosses.innerHTML;
+    let addToss = parseInt(countOfTosses)+1;
+    tosses.innerHTML = addToss;
+      
     button.addEventListener("click", onClick);
 
      function onClick(event) {
